@@ -1,5 +1,9 @@
 # 🌿 use-green-mode
 
+[![npm version](https://img.shields.io/npm/v/use-green-mode?color=brightgreen)](https://www.npmjs.com/package/use-green-mode)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/use-green-mode)](https://bundlephobia.com/package/use-green-mode)
+[![license](https://img.shields.io/npm/l/use-green-mode)](https://github.com/udhayavirat18/use-green-mode/blob/main/LICENSE)
+
 A lightweight, eco-friendly React hook that gracefully degrades your UI to save battery and data. 
 
 Modern web apps are heavy. When a user's device is dying or their connection drops, running 60fps animations and loading 4K images drains their battery faster. `use-green-mode` watches native browser APIs and gives you a simple set of boolean flags to turn off the heavy stuff when your users need it most.

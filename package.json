@@ -1,6 +1,7 @@
 {
   "name": "use-green-mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A lightweight, eco-friendly React hook that gracefully degrades your UI to save battery and data.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,11 +10,31 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "react-hook",
+    "performance",
+    "sustainability",
+    "eco-friendly",
+    "battery-saving",
+    "green-web",
+    "optimization",
+    "low-power",
+    "data-saver",
+    "lightweight",
+    "frontend"
+  ],
   "author": "UdhayaKumar",
   "license": "MIT",
   "type": "commonjs",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udhayavirat18/use-green-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/udhayavirat18/use-green-mode/issues"
+  },
+  "homepage": "https://github.com/udhayavirat18/use-green-mode#readme",
   "dependencies": {
     "@nanostores/react": "^1.0.0",
     "nanostores": "^1.1.1"
