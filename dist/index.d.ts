@@ -6,7 +6,7 @@ interface GreenThresholds {
     ecoThemeAt?: number;
 }
 declare function useGreenMode(thresholds?: GreenThresholds): {
-    score: number;
+    energyScore: number;
     lowRes: boolean;
     stopAnimations: boolean;
     ecoTheme: boolean;

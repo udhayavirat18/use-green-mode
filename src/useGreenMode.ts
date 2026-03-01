@@ -8,18 +8,27 @@ interface GreenThresholds {
   ecoThemeAt?: number;
 }
 
+// Global flag to ensure we only add browser listeners once
+let isInitialized = false;
+
 export function useGreenMode(thresholds: GreenThresholds = {}) {
   const { lowResAt = 70, stopAnimationsAt = 50, ecoThemeAt = 30 } = thresholds;
-  const score = useStore(energyScore);
+  
+  // Read the current score from the Nano Store
+  const currentScore = useStore(energyScore);
 
   useEffect(() => {
-    initGreenObserver();
+    // Only initialize the engine once, even if the hook is used in 10 components
+    if (!isInitialized) {
+      initGreenObserver();
+      isInitialized = true;
+    }
   }, []);
 
   return {
-    score,
-    lowRes: score <= lowResAt,
-    stopAnimations: score <= stopAnimationsAt,
-    ecoTheme: score <= ecoThemeAt,
+    energyScore: currentScore, // FIXED: Now matches your README exactly!
+    lowRes: currentScore <= lowResAt,
+    stopAnimations: currentScore <= stopAnimationsAt,
+    ecoTheme: currentScore <= ecoThemeAt,
   };
 }
