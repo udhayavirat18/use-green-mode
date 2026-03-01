@@ -1,6 +1,6 @@
 {
   "name": "use-green-mode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight, eco-friendly React hook that gracefully degrades your UI to save battery and data.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
